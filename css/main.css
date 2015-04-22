@@ -3,7 +3,7 @@ body {
   margin: 50px;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .group {
@@ -16,7 +16,7 @@ a {
 
 .list-item-header {
 	color: pink;
-	margin:5px;
+	margin: 5px;
 	size: 14px;
 	font-weight: bold;
   text-decoration: none;
@@ -39,21 +39,56 @@ a {
   margin-right: 12px;
 }
 
-.list-item-rating{
-	display: block;
-	font-size: 10px;
-	color:grey;
+.list-item-date{
+  display: block;
+  font-size: 10px;
+  color: #bbb;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .list-item-description {
   text-decoration: none;
   font-family: sans-serif;
-  margin-left: 22%;
+  margin-left: 21%;
   line-height: 1.5;
   font-size: 12px;
+  margin-top: 5px;
 }
 
 .container {
   clear: both;
   overflow: hidden;
+}
+
+.button{
+  background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+  border-radius: 3px;
+  border: 1px solid #adb1b8;
+  width: 115px;
+  height: 30px;
+  margin-right: 12px;
+}
+
+.text{
+  color: #000;
+  text-align: center;
+  list-style: none;
+  font-size: 12px;
+  font: Arial;
+  padding-left: 30px;
+  padding-right: 30px
+}
+.text:hover{
+  color: #bbb;
+}
+
+.button:focus{
+  outline: none;
+  border-color: #e77600;
+  }
+
+.button:hover {
+  background: linear-gradient(to bottom, #e7e9ec, #f7f8fa);
+
 }
