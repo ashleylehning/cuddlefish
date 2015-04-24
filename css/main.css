@@ -6,13 +6,13 @@ a {
   text-decoration: none;
 }
 
-.header-image-wrapper {
+.header__wrapper {
   width: 100%;
   background: #232f3e;
   box-shadow: inset 0 2px 0 #1db4ff;
 }
 
-.header-image {
+.header {
   width: 1068px;
   height: 96px;
   margin: 0 auto;
@@ -20,76 +20,40 @@ a {
   background-size: cover;
 }
 
-//**********************
-.logo {
-  height: 30px;
-  display: block;
-  float: left;
-  margin-right: 10px;
-  margin-top: -2px;
+.container {
+  clear: both;
+  overflow: hidden;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.logo:hover {
-  transform: rotate(360deg);
-}
-
-.header{
-  font-family: serif;
-  font-size: 50px;
-  line-height: 30px;
-  padding-bottom: 10px;
-  margin: 50px;
-}
-
-.sub-head {
-  font-family: 15px italic sans-serif;
-  color: #bbb;
-  padding-bottom: 30px;
-  padding-left: 100px;
-  border-bottom: 1px solid #bbb;
-}
-***************************/
-
-.buy-price {
-  font: bold 14px sans-serif; 
-  color: #b12704;
-  display: inline-block;
-  line-height: 20px;
-  padding-bottom: 5px;
-}
-
-.list-price {
-  color: #bbb;
-  text-decoration: line-through;
-  display: inline-block;
-}
-
-.group {
-	overflow: hidden;
-	clear: both;
-	border-bottom: 1px solid #eee;
+.list__item {
+  overflow: hidden;
+  clear: both;
+  border-bottom: 1px solid #eee;
   margin-bottom: 10px;
   padding-bottom: 15px;
   padding-top: 20px;
 }
 
-.list-item-header {
+.list__item__header {
 	color: #1db4ff;
 	margin: 5px;
 	size: 14px Arial;
   text-decoration: none;
+  cursor: pointer;
 }
 
-.list-item-hover:hover .list-item-image {
+.list__item--hover:hover .list-item-image {
   background: #eee;
 }
 
 .list-item-hover:hover .list-item-header {
   color: #eee;
-  cursor: pointer;
 }
 
-.list-item-image {
+.list__item__image {
   box-sizing: border-box;
   width: 20%;
   border: 1px solid #eee;
@@ -98,15 +62,7 @@ a {
   margin-right: 12px;
 }
 
-.list-item-date{
-  display: block;
-  font-size: 10px;
-  color: #bbb;
-  margin-top: 5px;
-  margin-bottom: 15px;
-}
-
-.list-item-description {
+.list__item__description{
   text-decoration: none;
   font-family: sans-serif;
   margin-left: 21%;
@@ -115,15 +71,37 @@ a {
   margin-top: 5px;
 }
 
-.container {
-  clear: both;
-  overflow: hidden;
-  margin-left: 50px;
+.list__item__date {
+  display: block;
+  font-size: 10px;
+  color: #bbb;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 
-.button {
-  font: 12px Arial;
-  background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+.list__item__price--list {
+  color: #bbb;
+  text-decoration: line-through;
+  display: inline-block;
+}
+
+.list__item__price--buy {
+  font: bold 14px sans-serif; 
+  color: #b12704;
+  display: inline-block;
+  line-height: 20px;
+  padding-bottom: 5px;
+}
+
+.list__item__buy-box {
+  margin-left: 21%;
+}
+
+.list__item__button--twister {
+  font: 12px Arial, sans-serif;
+  background: -moz-linear-gradient(bottom, #f7f8fa, #e7e9ec);
+  background: -webkit-linear-gradient(bottom, #f7f8fa, #e7e9ec);
+  background: linear-gradient(bottom, #f7f8fa, #e7e9ec);
   border-radius: 3px;
   border: 1px solid #adb1b8;
   height: 20px;
@@ -134,25 +112,32 @@ a {
   float: left;
 }
 
-.button .text {
-  color: #000;
+.list__item__button--add-to-cart {
+  width: 115px;
+  height: 50px;
+  padding: 6px;
   text-align: center;
   list-style: none;
-  padding-left: 30px;
-  padding-right: 30px
+  border: 1px solid #a88734;  
+  background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+  font-size: 12px;
+  font-family: sans-serif;
+  color: #000;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  border-radius: 3px;
 }
 
 .text:hover {
   color: #000;
 }
 
-.button:focus {
+.list__item__button--twister:focus {
   outline: none;
   border-color: #FFA500;
   background: #ffcb6b;
 }
 
-.prime {
+.icon--prime {
   display: block;
   margin-bottom: 15px;
   width: 52px;
@@ -162,25 +147,6 @@ a {
   background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/amazonui/sprites/aui_sprite_0037-1x._V1_.png%22");
 }
 
-.stars {
-  background-size: 400px 650px;
-  background-position: -175px -368px;
-  background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/amazonui/sprites/aui_sprite_0037-1x._V1_.png%22");
-}
-
-.button:hover {
+.list__item__button--twister:hover {
   background: #fdd58c;
-}
-
-.add-to-cart-button {
-  width: 115px;
-  height: 50px;
-  padding: 6px;
-  text-align: center;
-  list-style: none;
-  font-family: 12px sans-serif #000;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
-  border-radius: 3px;
-  border: 1px solid #a88734;  
-  background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
 }
