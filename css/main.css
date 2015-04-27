@@ -15,10 +15,6 @@ ANNIMATION: Interaction properties
 
 ****/ 
 
-body { 
-  font-family: 12px sans-serif;
-}
-
 a {
   text-decoration: none;
 }
@@ -60,7 +56,8 @@ a {
 	margin: 5px;
   color: #1db4ff;
 
-  size: 14px Arial;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
   text-decoration: none;
 
   cursor: pointer;
@@ -177,7 +174,7 @@ a {
   display: block;
 
   vertical-align: baseline;
-  
+
   background-position: -5px -489px;
   background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/amazonui/sprites/aui_sprite_0037-1x._V1_.png%22");
 }
