@@ -33,6 +33,7 @@ a {
   width: 1068px;
   height: 96px;
   margin: 0 auto;
+
   background-image: url("../images/Banner.png");
   background-size: cover;
 }
@@ -48,17 +49,20 @@ a {
 .list__item {
   overflow: hidden;
   clear: both;
-  border-bottom: 1px solid #eee;
   margin-bottom: 10px;
   padding-bottom: 15px;
   padding-top: 20px;
+
+  border-bottom: 1px solid #eee;
 }
 
 .list__item__header {
 	margin: 5px;
-	size: 14px Arial;
-  text-decoration: none;
   color: #1db4ff;
+
+  size: 14px Arial;
+  text-decoration: none;
+
   cursor: pointer;
 }
 
@@ -82,6 +86,7 @@ a {
 .list__item__description{
   margin-left: 21%;
   margin-top: 5px;
+
   text-decoration: none;
   font-family: sans-serif;
   line-height: 1.5;
@@ -92,13 +97,17 @@ a {
   margin-top: 5px;
   margin-bottom: 15px;
   display: block;
+
   font-size: 10px;
+
   color: #bbb;
 }
 
 .list__item__price--list {
-  text-decoration: line-through;
   display: inline-block;
+
+  text-decoration: line-through;
+
   color: #bbb;
 
 }
@@ -106,9 +115,11 @@ a {
 .list__item__price--buy {
   padding-bottom: 5px;
   display: inline-block;
+
   font: bold 14px sans-serif; 
-  color: #b12704;
   line-height: 20px;
+
+  color: #b12704;
 }
 
 .list__item__buy-box {
@@ -120,9 +131,11 @@ a {
   padding: 6px;
   margin-right: 12px;
   display: block;
+
   text-align: center;
   float: left;
   font: 12px Arial, sans-serif;
+
   background: -moz-linear-gradient(bottom, #f7f8fa, #e7e9ec);
   background: -webkit-linear-gradient(bottom, #f7f8fa, #e7e9ec);
   background: linear-gradient(bottom, #f7f8fa, #e7e9ec);
@@ -134,11 +147,13 @@ a {
   width: 115px;
   height: 50px;
   padding: 6px;
+
   text-align: center;
   list-style: none;
   border: 1px solid #a88734;  
   font-size: 12px;
   font-family: sans-serif;
+
   background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
   color: #000;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
@@ -160,8 +175,10 @@ a {
   width: 52px;
   height: 16px;
   display: block;
-  background-position: -5px -489px;
+
   vertical-align: baseline;
+  
+  background-position: -5px -489px;
   background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/amazonui/sprites/aui_sprite_0037-1x._V1_.png%22");
 }
 
