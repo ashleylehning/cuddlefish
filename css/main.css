@@ -1,3 +1,20 @@
+
+/****  
+
+DISPLAY: 
+    Things that effect the box-model or positioning.
+    EX: heighe, width, box-size padding, margin, float, clear, overflow;
+TYPE: 
+    Things that have to to with type
+    EX: font-family, color, weight;
+DECORATION:
+    Visual styles.
+    EX: background, background-color, border, radius;
+ANNIMATION: Interaction properties
+    EX: transitions, annimations, cursor changes;
+
+****/ 
+
 body { 
   font-family: 12px sans-serif;
 }
@@ -5,7 +22,7 @@ body {
 a {
   text-decoration: none;
 }
-
+ 
 .header__wrapper {
   width: 100%;
   background: #232f3e;
@@ -21,11 +38,11 @@ a {
 }
 
 .container {
-  clear: both;
-  overflow: hidden;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  clear: both;
+  overflow: hidden;
 }
 
 .list__item {
@@ -38,10 +55,10 @@ a {
 }
 
 .list__item__header {
-	color: #1db4ff;
 	margin: 5px;
 	size: 14px Arial;
   text-decoration: none;
+  color: #1db4ff;
   cursor: pointer;
 }
 
@@ -56,41 +73,42 @@ a {
 .list__item__image {
   box-sizing: border-box;
   width: 20%;
-  border: 1px solid #eee;
   float: left;
+  border: 1px solid #eee;
   padding: 4px;
   margin-right: 12px;
 }
 
 .list__item__description{
+  margin-left: 21%;
+  margin-top: 5px;
   text-decoration: none;
   font-family: sans-serif;
-  margin-left: 21%;
   line-height: 1.5;
   font-size: 12px;
-  margin-top: 5px;
 }
 
 .list__item__date {
+  margin-top: 5px;
+  margin-bottom: 15px;
   display: block;
   font-size: 10px;
   color: #bbb;
-  margin-top: 5px;
-  margin-bottom: 15px;
 }
 
 .list__item__price--list {
-  color: #bbb;
   text-decoration: line-through;
   display: inline-block;
+  color: #bbb;
+
 }
 
 .list__item__price--buy {
+  padding-bottom: 5px;
+  display: inline-block;
   font: bold 14px sans-serif; 
   color: #b12704;
-  display: inline-block;
   line-height: 20px;
-  padding-bottom: 5px;
 }
 
 .list__item__buy-box {
@@ -98,18 +116,18 @@ a {
 }
 
 .list__item__button--twister {
+  height: 20px;
+  padding: 6px;
+  margin-right: 12px;
+  display: block;
+  text-align: center;
+  float: left;
   font: 12px Arial, sans-serif;
   background: -moz-linear-gradient(bottom, #f7f8fa, #e7e9ec);
   background: -webkit-linear-gradient(bottom, #f7f8fa, #e7e9ec);
   background: linear-gradient(bottom, #f7f8fa, #e7e9ec);
   border-radius: 3px;
   border: 1px solid #adb1b8;
-  height: 20px;
-  padding: 6px;
-  margin-right: 12px;
-  text-align: center;
-  display: block;
-  float: left;
 }
 
 .list__item__button--add-to-cart {
@@ -119,9 +137,9 @@ a {
   text-align: center;
   list-style: none;
   border: 1px solid #a88734;  
-  background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
   font-size: 12px;
   font-family: sans-serif;
+  background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
   color: #000;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
   border-radius: 3px;
@@ -138,10 +156,10 @@ a {
 }
 
 .icon--prime {
-  display: block;
   margin-bottom: 15px;
   width: 52px;
   height: 16px;
+  display: block;
   background-position: -5px -489px;
   vertical-align: baseline;
   background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/amazonui/sprites/aui_sprite_0037-1x._V1_.png%22");
